@@ -11,7 +11,7 @@ body {
 }
 
 .main-container {
-  margin: 0 auto;
+  margin: 10% auto;
   display: flex;
   width: 80%;
   flex-wrap: wrap;
@@ -50,7 +50,15 @@ h1 {
   line-height: 1.5em;
   font-size: clamp(1rem, 1.4vw, 1.25rem);
   background-color: rgba(240, 248, 255, 0.753);
-  padding: 1em;
+  padding: 2em;
+}
+
+.text-container p:nth-child(even) {
+  margin-top: 1.5em;
+}
+
+.text-container span {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,6 +72,7 @@ h1 {
   .main-container {
     width: 75%;
     height: 90%;
+    margin: 0 auto;
   }
   .main-container section {
     width: 45%;
